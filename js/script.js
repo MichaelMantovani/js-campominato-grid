@@ -26,34 +26,28 @@ const grid = document.getElementById('grid')
 
       // Verifico la scelta dell'utente
       let cellTot = 100
+      let mode = 'easy'
       if (difficulty == 2){
         cellTot = 81
+        mode = 'medium'
       } else if (difficulty == 3){
         cellTot = 49
+        mode = 'hard'
       } 
 
       // In base alla scelta della difficoltà genero il numero di celle e la loro struttura 
       for (let i = 1; i <= cellTot; i++) {
-         const cell = createCell (i)
+          const cell = createCell (i)
 
-         if (cellTot == 100){
-            cell.classList.add('easy')
-          } else if (cellTot == 81) {
-            cell.classList.add('medium')
-          } else {
-            cell.classList.add('hard')
-          }
+          cell.classList.add(mode)
+              
             
-          
           cell.addEventListener('click', function(){
             console.log(i)
             this.classList.add('clicked')
           })
-          
-          grid.appendChild(cell)
+            grid.appendChild(cell)
         }
-
-
       })
       
     
