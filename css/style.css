@@ -85,6 +85,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .cell.easy{
@@ -97,5 +98,10 @@ main{
 
 .cell.hard{
   flex-basis: calc(100% / 7);
+}
+
+
+.clicked{
+  background-color: lightblue;
 }
 

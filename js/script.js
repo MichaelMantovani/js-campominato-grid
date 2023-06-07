@@ -43,8 +43,14 @@ const grid = document.getElementById('grid')
           } else if (cellTot == 49) {
             cell.classList.add('hard')
           }
-
-         grid.appendChild(cell)
+          
+          cell.addEventListener('click', function(){
+            console.log(i)
+            this.classList.add('clicked')
+          })
+          
+          grid.appendChild(cell)
         }
-        
       })
+      
+    
