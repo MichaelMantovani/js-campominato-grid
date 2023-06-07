@@ -32,7 +32,7 @@ const grid = document.getElementById('grid')
         cellTot = 49
       } 
 
-      // In base alla scelta della difficoltà genero il numero di casselle e la loro struttura 
+      // In base alla scelta della difficoltà genero il numero di celle e la loro struttura 
       for (let i = 1; i <= cellTot; i++) {
          const cell = createCell (i)
 
