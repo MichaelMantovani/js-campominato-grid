@@ -73,7 +73,7 @@ main{
 }
 
 
-.grid{
+#grid{
   height: 100%;
   display: flex;
   flex-wrap: wrap; 
@@ -81,7 +81,21 @@ main{
 }
 
 .cell{
-  flex-basis: calc(100% / 10);
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell.easy{
+  flex-basis: calc(100% / 10);
+}
+
+.cell.medium{
+  flex-basis: calc(100% / 9);
+}
+
+.cell.hard{
+  flex-basis: calc(100% / 7);
 }
 

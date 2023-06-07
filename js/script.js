@@ -17,3 +17,34 @@ const grid = document.getElementById('grid')
     }
 
 
+
+    playButton.addEventListener('click', function(){
+
+      // Recupero il valore della scelta della difficoltà
+      const difficulty = difficultyInput.value
+      
+
+      // Verifico la scelta dell'utente
+      let cellTot = 100
+      if (difficulty == 2){
+        cellTot = 81
+      } else if (difficulty == 3){
+        cellTot = 49
+      } 
+
+
+      for (let i = 1; i <= cellTot; i++) {
+         const cell = createCell (i)
+
+         if (cellTot == 100){
+            cell.classList.add('easy')
+          } else if (cellTot == 81) {
+            cell.classList.add('medium')
+          } else if (cellTot == 49) {
+            cell.classList.add('hard')
+          }
+
+         grid.appendChild(cell)
+        }
+        
+      })
