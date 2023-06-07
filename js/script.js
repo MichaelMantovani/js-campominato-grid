@@ -22,7 +22,7 @@ const grid = document.getElementById('grid')
 
       // Recupero il valore della scelta della difficoltà
       const difficulty = difficultyInput.value
-      
+      grid.innerText = ''
 
       // Verifico la scelta dell'utente
       let cellTot = 100
