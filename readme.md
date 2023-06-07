@@ -43,10 +43,9 @@ Aggiungere una select accanto al bottone di generazione, che fornisca una scelta
 
 - Creo il markup statico
 - Recupero gli elementi dal DOM
-**CREO UNA FUNZIONE** che genera un numero a scelta di caselle numerate ordinatamente:
-  - Genero numeri ordinati da 1 a max
-  - Genero caselle in base al max
-  - Inserisco i numeri generati nella caselle
+**CREO UNA FUNZIONE** che genera una cella numerata:
+  - Genero una cella
+  - Inserisco il numero all'interno
 **AL CLICK** del bottone 
   - Recupero il valore della scelta della difficoltà
   **SE** l'utente sceglie facile
