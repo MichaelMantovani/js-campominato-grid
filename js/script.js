@@ -32,7 +32,7 @@ const grid = document.getElementById('grid')
         cellTot = 49
       } 
 
-
+      // In base alla scelta della difficoltà genero il numero di casselle e la loro struttura 
       for (let i = 1; i <= cellTot; i++) {
          const cell = createCell (i)
 
@@ -40,9 +40,10 @@ const grid = document.getElementById('grid')
             cell.classList.add('easy')
           } else if (cellTot == 81) {
             cell.classList.add('medium')
-          } else if (cellTot == 49) {
+          } else {
             cell.classList.add('hard')
           }
+            
           
           cell.addEventListener('click', function(){
             console.log(i)
@@ -51,6 +52,8 @@ const grid = document.getElementById('grid')
           
           grid.appendChild(cell)
         }
+
+
       })
       
     
