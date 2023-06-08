@@ -9,15 +9,15 @@ const grid = document.getElementById('grid')
 
 // CREO UNA FUNZIONE che genera una cella numerata
 
- function createCell (number) {
+ function createCell (cellNumber) {
       const cell = document.createElement('div');
       cell.className = 'cell';
-      cell.append(number)
+      cell.append(cellNumber)
       return cell;
     }
 
 
-
+    // Al click del bottone genero la griglia di gioco
     playButton.addEventListener('click', function(){
 
       // Recupero il valore della scelta della difficoltà
